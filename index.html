@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤 문구</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <p id="message">🔮 너의 고민을 들어줄게! 🔮</p>
+    <button onclick="showRandomMessage()">눌러서 확인하기</button>
+
+    <script>
+        function showRandomMessage() {
+            const messages = [
+                "하지마",
+                "절대 하지마",
+                "될거같아?",
+                "니가?",
+                "느낌이 안좋아"
+                "잘 안될거 같아"
+                "과연 잘 될까?"
+                "다시 한번 고민해봐"
+                "확실해?"
+                "당장 하자"
+                "해보자"
+                "행운의 여신이 우리에게 손을 건내네"
+                "할 수 있어"
+                "느낌이 좋아"
+                "잘 될거 같아"
+                "잘 되겠는데?"
+                "안하고 뭐해?"
+                "고민같은거 하지마"
+                "시간은 항상 가는 중이야"
+                "애매해"
+                "확률은 반반이야"
+                "자신감을 가져"
+                "포기하지마"
+                "끝까지 해보자"
+                "안하는게 나을거 같아"
+                "때론 그게 독이 될 수 있어"
+                "근자감은 위험해"
+                "얼른 포기해"
+                "감성적으로 생각해봐"
+                "이성적으로 생각해봐"
+                "괜찮아"
+                "하나도 안 괜찮아"
+                "그럴 수 있어"
+                "그럴 수 없어"
+                "현실을 받아들여"
+                "현실을 부정해"
+                "양보 하자"
+                "양보 하지마"
+                "다른 사람에게도 물어봐. 혼자 고민할게 아니야"
+                "다른 사람에게도 물어봐. 혼자 고민할게 아니야"
+                "다른 사람에게도 물어봐. 혼자 고민할게 아니야"
+                "다른 사람에게도 물어봐. 혼자 고민할게 아니야"
+                "다른 사람에게도 물어봐. 혼자 고민할게 아니야"
+                "혼자만의 시간을 가져. 시간이 해결해 주겠지"
+                "혼자만의 시간을 가져. 시간이 해결해 주겠지"
+                "혼자만의 시간을 가져. 시간이 해결해 주겠지"
+                "혼자만의 시간을 가져. 시간이 해결해 주겠지"
+                "혼자만의 시간을 가져. 시간이 해결해 주겠지"
+            ];
+            document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
+        }
+    </script>
+</body>
+</html>
